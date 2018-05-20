@@ -1,0 +1,110 @@
+/* line 4, ../sass/footer.scss */
+.mailchimp {
+  margin-bottom: 25px;
+  margin-top: 30px;
+}
+/* line 7, ../sass/footer.scss */
+.mailchimp p {
+  font-size: 16px;
+}
+/* line 10, ../sass/footer.scss */
+.mailchimp label {
+  font-weight: 300;
+  font-size: 16px;
+  display: block;
+}
+/* line 16, ../sass/footer.scss */
+.mailchimp input {
+  border: 1px solid #eee;
+  margin-bottom: 10px;
+}
+/* line 20, ../sass/footer.scss */
+.mailchimp .mc-field-group {
+  display: inline-block;
+}
+/* line 23, ../sass/footer.scss */
+.mailchimp .button {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+
+/* line 29, ../sass/footer.scss */
+footer {
+  padding: 40px;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+  color: #aaaaaa;
+  text-align: center;
+}
+
+/* line 38, ../sass/footer.scss */
+#event-mini {
+  padding: 30px 0px;
+  font-size: 15px;
+  background-color: white;
+  box-shadow: 0 15px 15px -10px rgba(0, 0, 0, 0.08);
+}
+@media screen and (max-width: 768px) {
+  /* line 38, ../sass/footer.scss */
+  #event-mini {
+    padding: 30px 30px;
+  }
+}
+/* line 49, ../sass/footer.scss */
+#event-mini span {
+  color: #999;
+}
+/* line 52, ../sass/footer.scss */
+#event-mini a:hover span {
+  color: #4ebf3f;
+}
+/* line 55, ../sass/footer.scss */
+#event-mini h3 {
+  margin: 0;
+  font-size: 24px;
+}
+
+/* line 63, ../sass/footer.scss */
+#instagram {
+  background-color: #eee;
+  padding-bottom: 30px;
+}
+/* line 66, ../sass/footer.scss */
+#instagram .sb_instagram_header {
+  text-align: center;
+  padding: 15px 15px 0 !important;
+  margin-bottom: -20px;
+}
+/* line 70, ../sass/footer.scss */
+#instagram .sb_instagram_header .sbi_header_link {
+  float: none;
+  display: inline-block;
+}
+/* line 73, ../sass/footer.scss */
+#instagram .sb_instagram_header .sbi_header_link h3.sbi_no_bio {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: -15px;
+  padding-top: 0 !important;
+}
+/* line 82, ../sass/footer.scss */
+#instagram #sb_instagram .sbi_follow_btn a {
+  display: inline-block;
+  border: 1px solid #ddd;
+  padding: 10px 15px;
+  text-decoration: none;
+  background-color: transparent;
+  border-radius: 0px;
+  color: #000;
+  font-size: 16px;
+  margin-top: -15px;
+}
+/* line 92, ../sass/footer.scss */
+#instagram #sb_instagram .sbi_follow_btn a:hover {
+  background-color: #4ebf3f;
+  color: white;
+  border-color: #4ebf3f;
+  text-decoration: none;
+}

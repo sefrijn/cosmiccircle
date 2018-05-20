@@ -1,0 +1,110 @@
+/* line 4, ../sass/vision.scss */
+.page-template-page-vision #vision {
+  padding-bottom: 30px;
+}
+/* line 6, ../sass/vision.scss */
+.page-template-page-vision #vision h2 {
+  text-align: center;
+}
+/* line 10, ../sass/vision.scss */
+.page-template-page-vision #vision .vision-introduction p {
+  margin-top: -5px;
+  margin-bottom: 20px;
+}
+/* line 15, ../sass/vision.scss */
+.page-template-page-vision #vision .vision-elements-wrapper {
+  margin: 0 -30px;
+}
+/* line 17, ../sass/vision.scss */
+.page-template-page-vision #vision .vision-elements-wrapper .vision-element {
+  margin-bottom: 20px;
+  text-decoration: none;
+  display: block;
+}
+/* line 21, ../sass/vision.scss */
+.page-template-page-vision #vision .vision-elements-wrapper .vision-element .item-image-wrapper {
+  height: 200px;
+  top: 0px;
+  margin: 0;
+  left: 15px;
+  right: 15px;
+}
+/* line 27, ../sass/vision.scss */
+.page-template-page-vision #vision .vision-elements-wrapper .vision-element .item-image-wrapper .item-image, .page-template-page-vision #vision .vision-elements-wrapper .vision-element .item-image-wrapper .item-image-blur {
+  top: 0px;
+  bottom: 0px;
+  width: 100%;
+}
+/* line 33, ../sass/vision.scss */
+.page-template-page-vision #vision .vision-elements-wrapper .vision-element .item-image-content {
+  padding: 0;
+  min-height: 200px;
+  width: 100%;
+  text-align: center;
+}
+/* line 38, ../sass/vision.scss */
+.page-template-page-vision #vision .vision-elements-wrapper .vision-element .item-image-content .vertical-center {
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+/* line 39, ../sass/vision.scss */
+.page-template-page-vision #vision .vision-elements-wrapper .vision-element .item-image-content .vertical-center h2 {
+  font-size: 25px;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+/* line 50, ../sass/vision.scss */
+.page-template-page-vision #vision .vision-elements-wrapper .vision-element:hover .item-image-content .vertical-center {
+  box-shadow: 0 4px 0 #4ebf3f;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+/* line 53, ../sass/vision.scss */
+.page-template-page-vision #vision .vision-elements-wrapper .vision-element:hover .item-image-content .vertical-center h2 {
+  -moz-transform: scale(1.2, 1.2);
+  -ms-transform: scale(1.2, 1.2);
+  -webkit-transform: scale(1.2, 1.2);
+  transform: scale(1.2, 1.2);
+}
+/* line 64, ../sass/vision.scss */
+.page-template-page-vision #vision .vision-detail {
+  margin-top: 40px;
+}
+/* line 66, ../sass/vision.scss */
+.page-template-page-vision #vision .vision-detail .image {
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  /* line 66, ../sass/vision.scss */
+  .page-template-page-vision #vision .vision-detail .image {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+/* line 72, ../sass/vision.scss */
+.page-template-page-vision #vision .vision-detail .image div {
+  height: 300px;
+}
+/* line 79, ../sass/vision.scss */
+.page-template-page-vision #vision .vision-detail h1 {
+  text-align: center;
+  font-size: 55px;
+}
+/* line 84, ../sass/vision.scss */
+.page-template-page-vision #vision .vision-detail p {
+  font-size: 16px;
+}
+/* line 89, ../sass/vision.scss */
+.page-template-page-vision #vision .vision-detail .first-section p {
+  font-size: 21px;
+  font-weight: 300;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+}

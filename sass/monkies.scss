@@ -1,0 +1,105 @@
+@import "base";
+@import "compass/css3";
+
+// ALL MONKIES
+.page-template-page-monkies #monkies{
+	@media screen and (min-width: 768px){
+		.container{
+			padding:0;
+		}
+	}
+	h2{
+		text-align: center;
+	}
+	.monkie-item{
+		margin-bottom:40px;
+		.monkie-image{
+			position:relative;
+			.title{
+				@include background-image(linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.7)));
+				color:white;
+				position:absolute;
+				bottom:0px;
+				left:0px;
+				right:0px;
+				margin:0;
+				padding:20px 5px 10px;
+				text-align: center;
+				h3{
+					font-size:32px;
+					margin:0;
+				}
+				p{
+					padding:0;
+					margin:0;
+					margin-top:-6px;
+					color:white;
+					letter-spacing: 2px;
+				}
+			}
+			img{
+				width:100%;
+				height:auto;							
+			}
+			.dashicons-external{
+				visibility: hidden;
+				position: absolute;
+				font-size:30px;
+				height:30px;
+				width:30px;
+				right:20px;
+				bottom:19px;
+			}
+		}
+		p{
+			font-size:15px;
+		}
+		@media screen and (max-width: 991px){
+			.intro{
+				display: none;
+			}
+			.location{
+				display: none;
+			}
+			.monkie-image .title h3{
+				font-size:25px;
+				margin:0;
+			}			
+		}
+	}
+	a.monkie-image{
+		display: block;
+		text-decoration: none;
+		&:hover{
+			p{
+				color:#333333;
+			}
+			img{
+				box-shadow:0 4px 0 $highlight;				
+			}
+			.dashicons-external{
+				visibility: visible;
+				color:white;
+			}
+
+		}
+	}
+}
+
+// SINGLE MONKIE
+#page.monkie-single{
+	header{
+		margin-top:0px;
+		min-height:300px;
+		@media screen and (min-width: 768px){
+			min-height:400px;
+		}
+		@media screen and (min-width: 992px){
+			min-height:460px;
+		}
+	}
+	.website{
+		font-size:21px;
+		color:$highlight;
+	}
+}

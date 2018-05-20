@@ -1,0 +1,112 @@
+/* line 4, ../sass/locations.scss */
+.page-template-page-locations #locations {
+  padding-bottom: 30px;
+}
+/* line 6, ../sass/locations.scss */
+.page-template-page-locations #locations h2 {
+  text-align: center;
+}
+/* line 10, ../sass/locations.scss */
+.page-template-page-locations #locations .locations-elements-wrapper {
+  margin: 0 -30px;
+}
+/* line 12, ../sass/locations.scss */
+.page-template-page-locations #locations .locations-elements-wrapper .locations-element {
+  margin-bottom: 20px;
+  text-decoration: none;
+  display: block;
+}
+/* line 16, ../sass/locations.scss */
+.page-template-page-locations #locations .locations-elements-wrapper .locations-element .item-image-wrapper {
+  height: 200px;
+  top: 0px;
+  margin: 0;
+  left: 15px;
+  right: 15px;
+}
+/* line 22, ../sass/locations.scss */
+.page-template-page-locations #locations .locations-elements-wrapper .locations-element .item-image-wrapper .item-image, .page-template-page-locations #locations .locations-elements-wrapper .locations-element .item-image-wrapper .item-image-blur {
+  top: 0px;
+  bottom: 0px;
+  width: 100%;
+}
+/* line 28, ../sass/locations.scss */
+.page-template-page-locations #locations .locations-elements-wrapper .locations-element .item-image-content {
+  padding: 0;
+  min-height: 200px;
+  width: 100%;
+  text-align: center;
+}
+/* line 33, ../sass/locations.scss */
+.page-template-page-locations #locations .locations-elements-wrapper .locations-element .item-image-content .vertical-center {
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+/* line 34, ../sass/locations.scss */
+.page-template-page-locations #locations .locations-elements-wrapper .locations-element .item-image-content .vertical-center h2 {
+  font-size: 25px;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+/* line 37, ../sass/locations.scss */
+.page-template-page-locations #locations .locations-elements-wrapper .locations-element .item-image-content .vertical-center h2 span.subtitle {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-size: 16px;
+}
+/* line 51, ../sass/locations.scss */
+.page-template-page-locations #locations .locations-elements-wrapper .locations-element:hover .item-image-content .vertical-center {
+  box-shadow: 0 4px 0 #4ebf3f;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+/* line 54, ../sass/locations.scss */
+.page-template-page-locations #locations .locations-elements-wrapper .locations-element:hover .item-image-content .vertical-center h2 {
+  -moz-transform: scale(1.2, 1.2);
+  -ms-transform: scale(1.2, 1.2);
+  -webkit-transform: scale(1.2, 1.2);
+  transform: scale(1.2, 1.2);
+}
+/* line 65, ../sass/locations.scss */
+.page-template-page-locations #locations .locations-detail {
+  margin-top: 40px;
+}
+/* line 67, ../sass/locations.scss */
+.page-template-page-locations #locations .locations-detail .image {
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  /* line 67, ../sass/locations.scss */
+  .page-template-page-locations #locations .locations-detail .image {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+/* line 73, ../sass/locations.scss */
+.page-template-page-locations #locations .locations-detail .image div {
+  height: 300px;
+}
+/* line 80, ../sass/locations.scss */
+.page-template-page-locations #locations .locations-detail h1 {
+  text-align: center;
+  font-size: 55px;
+}
+/* line 85, ../sass/locations.scss */
+.page-template-page-locations #locations .locations-detail p {
+  font-size: 16px;
+}
+/* line 90, ../sass/locations.scss */
+.page-template-page-locations #locations .locations-detail .first-section p {
+  font-size: 21px;
+  font-weight: 300;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+}
