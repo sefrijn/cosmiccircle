@@ -21,15 +21,26 @@
 /* line 20, ../sass/footer.scss */
 .mailchimp .mc-field-group {
   display: inline-block;
+  width: 30%;
 }
-/* line 23, ../sass/footer.scss */
+@media screen and (max-width: 768px) {
+  /* line 20, ../sass/footer.scss */
+  .mailchimp .mc-field-group {
+    width: 100%;
+  }
+}
+/* line 26, ../sass/footer.scss */
+.mailchimp .mc-field-group input {
+  width: 100%;
+}
+/* line 30, ../sass/footer.scss */
 .mailchimp .button {
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
   border-radius: 0;
 }
 
-/* line 29, ../sass/footer.scss */
+/* line 36, ../sass/footer.scss */
 footer {
   padding: 40px;
   text-transform: uppercase;
@@ -39,7 +50,7 @@ footer {
   text-align: center;
 }
 
-/* line 38, ../sass/footer.scss */
+/* line 45, ../sass/footer.scss */
 #event-mini {
   padding: 30px 0px;
   font-size: 15px;
@@ -47,49 +58,49 @@ footer {
   box-shadow: 0 15px 15px -10px rgba(0, 0, 0, 0.08);
 }
 @media screen and (max-width: 768px) {
-  /* line 38, ../sass/footer.scss */
+  /* line 45, ../sass/footer.scss */
   #event-mini {
     padding: 30px 30px;
   }
 }
-/* line 49, ../sass/footer.scss */
+/* line 56, ../sass/footer.scss */
 #event-mini span {
   color: #999;
 }
-/* line 52, ../sass/footer.scss */
+/* line 59, ../sass/footer.scss */
 #event-mini a:hover span {
-  color: #4ebf3f;
+  color: #178ac1;
 }
-/* line 55, ../sass/footer.scss */
+/* line 62, ../sass/footer.scss */
 #event-mini h3 {
   margin: 0;
   font-size: 24px;
 }
 
-/* line 63, ../sass/footer.scss */
+/* line 70, ../sass/footer.scss */
 #instagram {
   background-color: #eee;
   padding-bottom: 30px;
 }
-/* line 66, ../sass/footer.scss */
+/* line 73, ../sass/footer.scss */
 #instagram .sb_instagram_header {
   text-align: center;
   padding: 15px 15px 0 !important;
   margin-bottom: -20px;
 }
-/* line 70, ../sass/footer.scss */
+/* line 77, ../sass/footer.scss */
 #instagram .sb_instagram_header .sbi_header_link {
   float: none;
   display: inline-block;
 }
-/* line 73, ../sass/footer.scss */
+/* line 80, ../sass/footer.scss */
 #instagram .sb_instagram_header .sbi_header_link h3.sbi_no_bio {
   font-size: 30px;
   text-align: center;
   margin-bottom: -15px;
   padding-top: 0 !important;
 }
-/* line 82, ../sass/footer.scss */
+/* line 89, ../sass/footer.scss */
 #instagram #sb_instagram .sbi_follow_btn a {
   display: inline-block;
   border: 1px solid #ddd;
@@ -101,10 +112,15 @@ footer {
   font-size: 16px;
   margin-top: -15px;
 }
-/* line 92, ../sass/footer.scss */
+/* line 99, ../sass/footer.scss */
 #instagram #sb_instagram .sbi_follow_btn a:hover {
-  background-color: #4ebf3f;
+  background-color: #178ac1;
   color: white;
-  border-color: #4ebf3f;
+  border-color: #178ac1;
   text-decoration: none;
+}
+/* line 106, ../sass/footer.scss */
+#instagram #sb_instagram #sbi_images {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }

@@ -6,20 +6,35 @@ header{
 	.container.site-header{
 		height:227px;
 		position:relative;
-		background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.4)), url("../img/header.jpg");
-		background-position: center center;
+		// background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.4)), url("../img/header.jpg");
+		background-image: url("../img/header.jpg");
+		background-position: center 65%;
 		background-repeat:no-repeat;
 		@include background-size(cover);
 		text-align:center;
-		padding:110px 0 28px;
+		// padding:110px 0 28px;
 		margin:0px auto 65px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		a,p{
 			color:white;
 		}
+		img{
+			width:530px;
+			height:auto;
+			@media screen and (max-width: 767px){
+				width:100%;
+			}
+
+		}
 		a{
+			display: flex;
+			align-items: center;
+			justify-content: center;
 			font-family: 'Baloo';
 			font-size:70px;
-			margin-top:20px;
+			// margin-top:20px;
 			line-height:0.9;
 			@media screen and (max-width: 767px){
 				font-size:40px;

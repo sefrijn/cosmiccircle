@@ -27,7 +27,7 @@ $organizer = tribe_get_organizer();
 <div class="col-md-4 col-md-offset-1 col-sm-6 col-xs-12 event-image">
 	<?php echo tribe_event_featured_image( null, 'half-page' ) ?>
 	<a href="<?php echo esc_url( tribe_get_event_link() ); ?>" class="date">
-		<?php echo tribe_get_start_date($post, false, $format = 'j F' ); ?>
+		<?php echo tribe_get_start_date(null, false, $format = 'j F' ); ?>
 	</a>
 </div>
 

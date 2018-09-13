@@ -16,6 +16,10 @@
 
 <link rel="image_src" href="<?php echo get_template_directory_uri(); ?>/img/header.jpg" />
 
+<!-- Fonts -->
+<link rel="stylesheet" href="https://use.typekit.net/moz2ugx.css">	
+
+
 <?php 
   if ( is_admin_bar_showing() ) echo '
   	<style>

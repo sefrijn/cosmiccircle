@@ -11,7 +11,8 @@ $home_url = function_exists('pll_home_url') ? pll_home_url() : get_site_url();
 		</label>
 		<!-- <h2 class="menuicon-caption"><?php // _e('Menu') ?></h2> -->
 		<a href="<?php echo $home_url ?>" class="logo">
-			<h2>The Monkies</h2>
+			<h2>cosmic circle</h2>
+			<!-- <img src="<?php echo get_template_directory_uri(); ?>/img/cc_logo_nav.png" alt=""> -->
 		</a>
 		<div class="menu-wrapper">
 			<?php wp_nav_menu(); ?>

@@ -19,11 +19,13 @@ $events_label_singular = tribe_get_event_label_singular();
 $events_label_plural = tribe_get_event_label_plural();
 
 $event_id = get_the_ID();
-
+$event_post = get_post($event_id);
 ?>
 
+<?php while ( have_posts() ) :  the_post(); ?>
+
 <header class="row" style="<?php if ( has_post_thumbnail() ) { ?>
-	<?php $post_image_id = get_post_thumbnail_id($post_to_use->ID);
+	<?php $post_image_id = get_post_thumbnail_id($event_id);
 		if ($post_image_id) {
 			$thumbnail = wp_get_attachment_image_src( $post_image_id, 'post-thumbnail', false);
 			if ($thumbnail) (string)$thumbnail = $thumbnail[0];
@@ -37,11 +39,11 @@ $event_id = get_the_ID();
 		?>
 		<?php } ?>
 	">
-	<h3><?php _e('evenement', 'themonkies') ?></h3>
+	<h3><?php _e('event', 'themonkies') ?></h3>
 	<h1 id="post-<?php the_ID(); ?>"><?php the_title(); ?></h1>
 	<h2>
-		<?php echo tribe_get_start_date($post, false ); ?><br>
-		<?php _e('om', 'themonkies') ?> <?php echo tribe_get_start_date($post, false, $format = 'G:i' ); ?>
+		<?php echo tribe_get_start_date($event_post, false ); ?>
+		<?php _e(' -', 'themonkies') ?> <?php echo tribe_get_start_date($event_post, false, $format = 'G:i' ); ?>
 	</h2>
 	<?php // echo tribe_events_event_schedule_details( $event_id, '<h2>', '</h2>' ); ?>
 </header>
@@ -52,7 +54,6 @@ $event_id = get_the_ID();
 	<!-- Notices -->
 	<?php tribe_the_notices() ?>
 
-	<?php while ( have_posts() ) :  the_post(); ?>
 		<div id="post-<?php the_ID(); ?>" <?php post_class('row'); ?>>
 			<div class="col-md-4">
 				<!-- Event meta -->
@@ -64,7 +65,7 @@ $event_id = get_the_ID();
 			<!-- Event content -->
 			<?php do_action( 'tribe_events_single_event_before_the_content' ) ?>
 			<div class="col-md-7 tribe-events-content">
-				<h2><?php _e('Beschrijving', 'themonkies') ?></h2>
+				<h2><?php _e('About this event', 'themonkies') ?></h2>
 				<?php the_content(); ?>
 				<!-- .tribe-events-single-event-description -->
 				<?php do_action( 'tribe_events_single_event_after_the_content' ) ?>

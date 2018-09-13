@@ -12,11 +12,7 @@
 				<div class="container">
 					<div class="row">
 						<header class="col-md-12" style="<?php if ( has_post_thumbnail() ) { ?>
-								<?php $post_image_id = get_post_thumbnail_id($post_to_use->ID);
-								if ($post_image_id) {
-									$thumbnail = wp_get_attachment_image_src( $post_image_id, 'post-thumbnail', false);
-									if ($thumbnail) (string)$thumbnail = $thumbnail[0];
-								}
+								<?php $thumbnail = get_the_post_thumbnail_url( get_the_ID(),'full' );
 								echo 'background:-webkit-linear-gradient(top, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(\''.$thumbnail.'\') no-repeat center center;';
 								echo 'background:-moz-linear-gradient(top, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(\''.$thumbnail.'\') no-repeat center center;';
 								echo 'background:-ms-linear-gradient(top, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(\''.$thumbnail.'\') no-repeat center center;';

@@ -2,54 +2,69 @@
 header .container.site-header {
   height: 227px;
   position: relative;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url("../img/header.jpg");
-  background-position: center center;
+  background-image: url("../img/header.jpg");
+  background-position: center 65%;
   background-repeat: no-repeat;
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
   background-size: cover;
   text-align: center;
-  padding: 110px 0 28px;
   margin: 0px auto 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-/* line 16, ../sass/header.scss */
+/* line 20, ../sass/header.scss */
 header .container.site-header a, header .container.site-header p {
   color: white;
 }
-/* line 19, ../sass/header.scss */
+/* line 23, ../sass/header.scss */
+header .container.site-header img {
+  width: 530px;
+  height: auto;
+}
+@media screen and (max-width: 767px) {
+  /* line 23, ../sass/header.scss */
+  header .container.site-header img {
+    width: 100%;
+  }
+}
+/* line 31, ../sass/header.scss */
 header .container.site-header a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: 'Baloo';
   font-size: 70px;
-  margin-top: 20px;
   line-height: 0.9;
 }
 @media screen and (max-width: 767px) {
-  /* line 19, ../sass/header.scss */
+  /* line 31, ../sass/header.scss */
   header .container.site-header a {
     font-size: 40px;
   }
 }
-/* line 29, ../sass/header.scss */
+/* line 44, ../sass/header.scss */
 header .container.site-header p {
   padding: 0 15%;
   margin: 0px auto;
   font-size: 23px;
 }
 @media screen and (max-width: 767px) {
-  /* line 29, ../sass/header.scss */
+  /* line 44, ../sass/header.scss */
   header .container.site-header p {
     font-size: 19px;
   }
 }
 
-/* line 41, ../sass/header.scss */
+/* line 56, ../sass/header.scss */
 #lang {
   position: absolute;
   top: 0px;
   right: 0px;
 }
-/* line 45, ../sass/header.scss */
+/* line 60, ../sass/header.scss */
 #lang a {
   font-size: 16px;
   font-family: 'Open Sans';
@@ -58,24 +73,24 @@ header .container.site-header p {
   margin: 0;
   text-decoration: none;
 }
-/* line 53, ../sass/header.scss */
+/* line 68, ../sass/header.scss */
 #lang a:hover {
-  background-color: #4ebf3f;
+  background-color: #178ac1;
 }
-/* line 57, ../sass/header.scss */
+/* line 72, ../sass/header.scss */
 #lang .dropdown-menu {
   background-color: rgba(0, 0, 0, 0.7);
   margin: 0;
   padding: 0;
 }
-/* line 61, ../sass/header.scss */
+/* line 76, ../sass/header.scss */
 #lang .dropdown-menu a {
   background-color: transparent;
   padding: 12px 20px;
   font-family: 'Open Sans';
   color: white;
 }
-/* line 66, ../sass/header.scss */
+/* line 81, ../sass/header.scss */
 #lang .dropdown-menu a:hover {
-  background-color: #4ebf3f;
+  background-color: #178ac1;
 }

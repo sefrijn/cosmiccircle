@@ -15,11 +15,11 @@
 
 <!-- VISION -->
 	<div id="vision" class="container">
-		<h1><?php _e('onze thema&apos;s', 'themonkies') ?></h1>
+		<h1><?php _e('our vision', 'themonkies') ?></h1>
 		<div class="vision-elements-wrapper row">
 			<?php
 				// Get the Vision child pages
-				$page_ID = get_ID_by_slug('visie');
+				$page_ID = get_ID_by_slug('vision');
 				$args=array(
 				  'post_type' => 'page',
 				  'post_status' => 'publish',
@@ -41,8 +41,8 @@
 							</div>
 							<div class="item-image-wrapper">
 								<div class="item-image-blur" style="
-									<?php if ( has_post_thumbnail($page->ID) ) { ?>
-										<?php $post_image_id = get_post_thumbnail_id($page->ID);
+									<?php if ( has_post_thumbnail(get_the_ID()) ) { ?>
+										<?php $post_image_id = get_post_thumbnail_id(get_the_ID());
 										if ($post_image_id) {
 											$thumbnail = wp_get_attachment_image_src( $post_image_id, 'large', false);
 											if ($thumbnail) (string)$thumbnail = $thumbnail[0];
@@ -52,8 +52,8 @@
 									">
 								</div>
 								<div class="item-image" style="
-									<?php if ( has_post_thumbnail($page->ID) ) { ?>
-										<?php $post_image_id = get_post_thumbnail_id($page->ID);
+									<?php if ( has_post_thumbnail(get_the_ID()) ) { ?>
+										<?php $post_image_id = get_post_thumbnail_id(get_the_ID());
 										if ($post_image_id) {
 											$thumbnail = wp_get_attachment_image_src( $post_image_id, 'large', false);
 											if ($thumbnail) (string)$thumbnail = $thumbnail[0];
@@ -70,17 +70,17 @@
 			?>
 		</div>
 		<div class="vision-read-more">
-			<a href="<?php echo get_the_permalink(pll_get_post($page_ID)); ?>"><?php _e('Lees meer over onze visie', 'themonkies') ?></a>
+			<a href="<?php echo get_the_permalink($page_ID); ?>"><?php _e('read our vision', 'themonkies') ?></a>
 		</div>	
 	</div>
 
 <!-- ACTIVITIES -->
 	<div id="activities" class="container">
-		<h1><?php _e('wat doen we?', 'themonkies') ?></h1>
+		<h1><?php _e('what we do', 'themonkies') ?></h1>
 		<div class="activities-elements-wrapper row">
 			<?php
 				// Get the activities child pages
-				$page_ID = get_ID_by_slug('activiteiten');
+				$page_ID = get_ID_by_slug('activities');
 				$args=array(
 				  'post_type' => 'page',
 				  'post_status' => 'publish',
@@ -94,7 +94,7 @@
 				$my_query = new WP_Query($args);
 				if( $my_query->have_posts() ) {
 					while ( $my_query->have_posts() ) : $my_query->the_post(); ?>
-						<a class="activities-element col-lg-3 col-md-3 col-sm-4 col-xs-6 item-style-1" href="<?php echo get_the_permalink(); ?>">
+						<a class="activities-element col-lg-3 col-md-3 col-sm-4 col-xs-12 item-style-1" href="<?php echo get_the_permalink(); ?>">
 							<div class="item-image-content vertical-center-wrapper">
 								<div class="vertical-center">
 						  			<h2><?php the_title(); ?></h2>	
@@ -103,8 +103,8 @@
 							</div>
 							<div class="item-image-wrapper">
 								<div class="item-image-blur" style="
-									<?php if ( has_post_thumbnail($page->ID) ) { ?>
-										<?php $post_image_id = get_post_thumbnail_id($page->ID);
+									<?php if ( has_post_thumbnail(get_the_ID()) ) { ?>
+										<?php $post_image_id = get_post_thumbnail_id(get_the_ID());
 										if ($post_image_id) {
 											$thumbnail = wp_get_attachment_image_src( $post_image_id, 'large', false);
 											if ($thumbnail) (string)$thumbnail = $thumbnail[0];
@@ -114,8 +114,8 @@
 									">
 								</div>
 								<div class="item-image" style="
-									<?php if ( has_post_thumbnail($page->ID) ) { ?>
-										<?php $post_image_id = get_post_thumbnail_id($page->ID);
+									<?php if ( has_post_thumbnail(get_the_ID()) ) { ?>
+										<?php $post_image_id = get_post_thumbnail_id(get_the_ID());
 										if ($post_image_id) {
 											$thumbnail = wp_get_attachment_image_src( $post_image_id, 'large', false);
 											if ($thumbnail) (string)$thumbnail = $thumbnail[0];
@@ -132,7 +132,7 @@
 			?>
 		</div>
 		<div class="activities-read-more">
-			<a href="<?php echo get_the_permalink(pll_get_post($page_ID)); ?>"><?php _e('Bekijk wat wij doen', 'themonkies') ?></a>
+			<a href="<?php echo get_the_permalink($page_ID); ?>"><?php _e('all our activities', 'themonkies') ?></a>
 		</div>	
 	</div>
 
@@ -143,63 +143,42 @@
 
 <!-- EVENTS -->
 
-			<div id="events" class="col-md-6">
-				<h1><?php _e('agenda', 'themonkies') ?></h1>
+			<div id="events" class="col-md-6 col-md-offset-3">
+				<h1 class="text-center"><?php _e('upcoming events', 'themonkies') ?></h1>
 				<?php dynamic_sidebar( 'events_widget' ); ?>
 			</div>
 
-<!-- BLOG -->
-
-			<div id="blog" class="col-md-6">
-				<h1><?php _e('blog', 'themonkies') ?></h1>
-				<?php
-					// Get the blogs
-					$args=array(
-					  'post_type' => 'post',
-					  'post_status' => 'publish',
-					  'posts_per_page' => 3,
-					  'order' => 'DESC'
-					  );
-					$my_query = new WP_Query($args);
-					if( $my_query->have_posts() ) {
-						while ( $my_query->have_posts() ) : $my_query->the_post(); ?>
-							<a href="<?php echo get_the_permalink(); ?>" class="item clearfix">
-								<?php if ( has_post_thumbnail() ) {
-									the_post_thumbnail('news-thumb');
-								} ?>
-								<p class="date"><?php echo get_the_date('j F'); ?></p>				
-								<h2><?php the_title(); ?></h2>
-								<p class="excerpt"><?php echo excerpt(25); ?></p>
-							</a>
-							<?php 
-						endwhile;
-					}
-				?>
-				<a href="<?php echo get_the_permalink(pll_get_post(get_ID_by_slug("blog"))); ?>" class="button"><?php _e('Bekijk Alles', 'themonkies') ?></a>		
-			</div>
 		</div>
 	</div>
 
-<!-- MONKIES -->
+<!-- PEOPLE -->
 
 	<div id="monkies" class="container">
 		<div class="row">
-			<h1><?php _e("onze lieve monkies"); ?></h1>
+			<h1><?php _e("who are we?"); ?></h1>
+			<p class="text-center">Cosmic Circle is run by Sefrijn Langen & Eline Louise.<br>But we could not do it without our beloved collaborators</p>
 			<?php
 				// Get the monkie child pages
-				$page_ID = get_ID_by_slug('monkies');			
+				$page_ID = get_ID_by_slug('people');			
 				$args=array(
 				  'post_type' => 'page',
 				  'post_status' => 'publish',
 				  'post_parent' => $page_ID,
-				  'posts_per_page' => 5,
+				  'posts_per_page' => 3,
 				  'orderby' => 'menu_order',				  
 				  'order' => 'DESC'
 				  );
 				$my_query = new WP_Query($args);
+				$i = 0;
 				if( $my_query->have_posts() ) {
 					while ($my_query->have_posts()) : $my_query->the_post(); ?>
-						<a href="<?php echo get_the_permalink(); ?>" class="col-md-2 col-sm-4 col-xs-6 monkie">
+						<?php $i++; ?>
+						<?php if($i == 3){ ?>
+							<a href="<?php echo get_the_permalink(get_ID_by_slug('people')); ?>" class="col-md-4 col-sm-4 col-xs-6 monkie">
+						<?php }else{ ?>
+							<a href="<?php echo get_the_permalink(); ?>" class="col-md-4 col-sm-4 col-xs-6 monkie">
+						<?php } ?>
+
 							<?php if ( has_post_thumbnail() ) {
 								the_post_thumbnail('news-thumb');
 							} ?>			
@@ -213,10 +192,6 @@
 					echo "Oh my gawd!! No Monkies were found in the database!";
 				}
 			?>
-			<a class="col-md-2 col-sm-4 col-xs-6 monkie" href="<?php echo get_the_permalink(pll_get_post(get_ID_by_slug('monkies'))); ?>">
-				<img class="attachment-news-thumb" src="<?php echo get_template_directory_uri(); ?>/img/more_monkies_small.jpg" alt="">
-				<h2>En meer!</h2>
-			</a>
 		</div>
 	</div>
 
@@ -224,9 +199,9 @@
 <!-- LOCATION -->
 
 	<div id="location" class="container">
-		<h1><?php echo __("bezoek ons!") ?></h1>
-		<p><?php _e('The Monkies kan je vinden op verschillende locaties. Onze hoofdlocatie zit op dit moment in Schiedam, waar we mooie activtietein organiseren in een prachtig pand.', 'themonkies') ?></p>
-		<a href="<?php echo get_the_permalink(pll_get_post(get_ID_by_slug('locaties'))); ?>"><?php _e('Lees meer', 'themonkies') ?></a>
+		<h1><?php echo __("Contact us") ?></h1>
+		<p><?php _e('Are you interested in hosting our workshop? Do you have a question about upcoming events?.', 'themonkies') ?></p>
+		<a href="<?php echo get_the_permalink(get_ID_by_slug('contact')); ?>"><?php _e('Send a Message', 'themonkies') ?></a>
 	</div>
 </div>
 <?php get_footer() ?>

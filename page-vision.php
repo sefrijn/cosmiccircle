@@ -7,7 +7,7 @@
 ?>
 <div id="vision" class="wrapper">
 	<div id="vision-overview" class="container">
-		<h2 class="page-title">onze visie</h2>
+		<h2 class="page-title">our vision</h2>
 		<div class="vision-introduction row">
 			<div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 text-center">
 				<?php the_content(); ?>
@@ -16,7 +16,7 @@
 		<div class="vision-elements-wrapper row">
 			<?php
 				// Get the Vision child pages
-				$page_ID = get_ID_by_slug('visie');
+				$page_ID = get_ID_by_slug('vision');
 				$args=array(
 				  'post_type' => 'page',
 				  'post_status' => 'publish',
@@ -35,8 +35,8 @@
 							</div>
 							<div class="item-image-wrapper">
 								<div class="item-image-blur" style="
-									<?php if ( has_post_thumbnail($page->ID) ) { ?>
-										<?php $post_image_id = get_post_thumbnail_id($page->ID);
+									<?php if ( has_post_thumbnail(get_the_ID()) ) { ?>
+										<?php $post_image_id = get_post_thumbnail_id(get_the_ID());
 										if ($post_image_id) {
 											$thumbnail = wp_get_attachment_image_src( $post_image_id, 'large', false);
 											if ($thumbnail) (string)$thumbnail = $thumbnail[0];
@@ -46,8 +46,8 @@
 									">
 								</div>
 								<div class="item-image" style="
-									<?php if ( has_post_thumbnail($page->ID) ) { ?>
-										<?php $post_image_id = get_post_thumbnail_id($page->ID);
+									<?php if ( has_post_thumbnail(get_the_ID()) ) { ?>
+										<?php $post_image_id = get_post_thumbnail_id(get_the_ID());
 										if ($post_image_id) {
 											$thumbnail = wp_get_attachment_image_src( $post_image_id, 'large', false);
 											if ($thumbnail) (string)$thumbnail = $thumbnail[0];
@@ -72,8 +72,8 @@
 						<h1><?php the_title(); ?></h1>
 						<div class="row image">
 							<div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2" style="
-								<?php if ( has_post_thumbnail($page->ID) ) { ?>
-									<?php $post_image_id = get_post_thumbnail_id($page->ID);
+								<?php if ( has_post_thumbnail(get_the_ID()) ) { ?>
+									<?php $post_image_id = get_post_thumbnail_id(get_the_ID());
 									if ($post_image_id) {
 										$thumbnail = wp_get_attachment_image_src( $post_image_id, 'large', false);
 										if ($thumbnail) (string)$thumbnail = $thumbnail[0];

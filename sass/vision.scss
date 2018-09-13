@@ -14,6 +14,9 @@
 	}
 	.vision-elements-wrapper{
 		margin:0 -30px;
+		@media screen and (max-width: 767px){
+			margin:0;
+		}
 		.vision-element{
 			margin-bottom:20px;
 			text-decoration: none;

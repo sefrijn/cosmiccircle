@@ -1,41 +1,50 @@
 <!-- Mailchimp -->
+<hr>
 <div class="container mailchimp">
-	<h4>Nieuwsbrief</h4>
+	<h4>Newsletter</h4>
 	<div class="row">
 		<div class="col-md-4">
-			<p>Wil je op de hoogte blijven van onze activiteiten? We sturen je maandelijks 1 nieuwsbrief met een overzicht. Je kan elk moment weer uitschrijven.</p>
+			<p>Do you wish to stay updated about our events? We will send you a monthly newsletter with an overview. You can unsubscribe at any time.</p>
 
 		</div>
 		<div class="col-md-8">
 
 			<!-- Begin MailChimp Signup Form -->
-			<p id="mc_embed_signup">
-				<form action="https://themonkies.us17.list-manage.com/subscribe/post?u=22ba3e8381c5fdbeb839f4469&amp;id=63623f644c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+			<div id="mc_embed_signup">
+				<form action="https://cosmiccircle.us15.list-manage.com/subscribe/post?u=5690eb0909662faa7a2db561d&amp;id=07b68a2df5" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 					<div id="mc_embed_signup_scroll">
-
 						<div class="mc-field-group">
-							<label for="mce-EMAIL">Email adres  <span class="asterisk">*</span>
+							<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
 							</label>
 							<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
 						</div>
 						<div class="mc-field-group">
-							<label for="mce-FNAME">Voornaam </label>
+							<label for="mce-FNAME">First Name </label>
 							<input type="text" value="" name="FNAME" class="" id="mce-FNAME">
 						</div>
 						<div class="mc-field-group">
-							<label for="mce-LNAME">Achternaam </label>
+							<label for="mce-LNAME">Last Name </label>
 							<input type="text" value="" name="LNAME" class="" id="mce-LNAME">
 						</div>
+					</div>
+
+						
+
+
+					<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+
 						<div id="mce-responses" class="clear">
 							<div class="response" id="mce-error-response" style="display:none"></div>
 							<div class="response" id="mce-success-response" style="display:none"></div>
 						</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-						<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_22ba3e8381c5fdbeb839f4469_63623f644c" tabindex="-1" value=""></div>
-						<div class="clear"><input type="submit" value="Inschrijven" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-					</div>
+						<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_5690eb0909662faa7a2db561d_07b68a2df5" tabindex="-1" value=""></div>
+	
 				</form>
-			</p>
+			</div>
+
 			<!--End mc_embed_signup-->
+
+
 		</div>	
 
 	</div>
@@ -62,7 +71,7 @@ if(count($events) != 0){ ?>
 	<div id="event-mini" class="container">
 		<div class="row">
 			<div class="col-md-3 col-sm-3">
-				<!-- <h3>agenda</h3> -->
+				<a href="<?php echo get_home_url()."/events"; ?>"><h3>upcoming events</h3></a>
 				<?php if(function_exists("pll_get_post")){ ?>
 						<a href="<?php echo pll_home_url($slug)."events"; ?>"><h3><?php _e('agenda', 'themonkies') ?></h3></a>
 				<?php }?>
@@ -82,20 +91,11 @@ if(count($events) != 0){ ?>
 
 
 <footer>
-&copy; The Monkies <?php echo date("Y"); ?> | <span class="dashicons dashicons-email-alt"></span> <a href="mailto:love@themonkies.nl">love@themonkies.nl</a> | <span class="dashicons dashicons-facebook-alt"></span> <a href="http://www.facebook.com/themonkies">Facebook</a> | Site by <a href="http://www.howaboutyes.com/">How About Yes</a>
+&copy; Cosmic Circle <?php echo date("Y"); ?> | <span class="dashicons dashicons-email-alt"></span> <a href="mailto:love@cosmiccircle.org">love@cosmiccircle.org</a> | <span class="dashicons dashicons-facebook-alt"></span> <a href="http://www.facebook.com/thecosmiccircle">Facebook</a> | <a href="http://soundcloud.com/cosmiccircle">Soundcloud</a> | Site by <a href="http://www.howaboutyes.com/">How About Yes</a>
 </footer>
 
 <!-- GOOGLE ANALYTICS -->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-11737642-7', 'auto');
-  ga('send', 'pageview');
-
-</script>
 
 
 <?php wp_footer(); ?>

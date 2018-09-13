@@ -91,7 +91,7 @@
 }
 /* line 77, ../sass/monkies.scss */
 .page-template-page-monkies #monkies a.monkie-image:hover img {
-  box-shadow: 0 4px 0 #4ebf3f;
+  box-shadow: 0 4px 0 #178ac1;
 }
 /* line 80, ../sass/monkies.scss */
 .page-template-page-monkies #monkies a.monkie-image:hover .dashicons-external {
@@ -119,5 +119,5 @@
 /* line 101, ../sass/monkies.scss */
 #page.monkie-single .website {
   font-size: 21px;
-  color: #4ebf3f;
+  color: #178ac1;
 }

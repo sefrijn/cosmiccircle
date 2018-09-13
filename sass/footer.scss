@@ -19,6 +19,13 @@
 	}
 	.mc-field-group{
 		display: inline-block;
+		width:30%;
+		@media screen and (max-width: 768px){
+			width:100%;
+		}
+		input{
+			width:100%;			
+		}
 	}
 	.button{
 		@include border-radius(0);
@@ -97,9 +104,8 @@ footer{
 			}			
 		}
 		#sbi_images{
-			// width:inherit;
-			// left:-30px;
-			// right:-30px;
+			margin-top:20px;
+			margin-bottom:20px;
 		}
 	}
 }

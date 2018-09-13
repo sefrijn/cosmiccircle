@@ -3,12 +3,18 @@
 
 // Typography
 body{
-	font-family: 'Open Sans';
+	font-family:'futura-pt', "futura-pt-n4", 'Futura', sans-serif;
+
+ // -webkit-font-smoothing: antialiased;
+    // -moz-font-smoothing: antialiased;
+      // -o-font-smoothing: antialiased;
+
+	// font-family: 'Open Sans';
 	font-size:18px;
 	font-weight:300;
 }
 p{
-	font-family: 'Open Sans';
+	// font-family: 'Open Sans';
 	line-height:26px;
 	margin-bottom:15px;
 	margin-top:15px;
@@ -20,9 +26,9 @@ p{
 	}
 }
 h1,h2,h3{
-	font-family: 'Baloo';
+	// font-family: 'Baloo';
 	font-weight:400;
-	@include font-smoothing();
+	// @include font-smoothing();
 }
 h1{
 	font-size:40px;

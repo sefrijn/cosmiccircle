@@ -5,12 +5,25 @@
   width: 100%;
   min-height: 62px;
 }
-/* line 13, ../sass/navigation.scss */
+@media screen and (max-width: 768px) {
+  /* line 8, ../sass/navigation.scss */
+  .navigation {
+    width: 100.3%;
+    left: -0.6px;
+  }
+}
+/* line 17, ../sass/navigation.scss */
 .navigation .container {
   background-color: white;
   box-shadow: 0 15px 15px -10px rgba(0, 0, 0, 0.05);
 }
-/* line 16, ../sass/navigation.scss */
+@media screen and (max-width: 768px) {
+  /* line 17, ../sass/navigation.scss */
+  .navigation .container {
+    text-align: center;
+  }
+}
+/* line 23, ../sass/navigation.scss */
 .navigation .container .logo {
   visibility: hidden;
   display: inline-block;
@@ -28,31 +41,37 @@
   -webkit-transition-delay: 0.3s;
   transition-delay: 0.3s;
 }
-/* line 25, ../sass/navigation.scss */
+/* line 32, ../sass/navigation.scss */
 .navigation .container .logo:hover h2 {
   text-decoration: underline;
 }
-/* line 30, ../sass/navigation.scss */
+/* line 37, ../sass/navigation.scss */
 .navigation .container .menuicon-caption {
   display: none;
   color: #ddd;
 }
 @media screen and (min-width: 768px) {
-  /* line 13, ../sass/navigation.scss */
+  /* line 17, ../sass/navigation.scss */
   .navigation .container {
     position: relative;
   }
-  /* line 36, ../sass/navigation.scss */
+  /* line 43, ../sass/navigation.scss */
   .navigation .container .logo {
     position: absolute;
     left: 0;
-    top: 15px;
+    top: 11px;
   }
-  /* line 41, ../sass/navigation.scss */
+  /* line 47, ../sass/navigation.scss */
+  .navigation .container .logo img {
+    width: 170px;
+    height: auto;
+  }
+  /* line 51, ../sass/navigation.scss */
   .navigation .container .logo h2 {
+    font-weight: 500;
     margin: 0;
   }
-  /* line 46, ../sass/navigation.scss */
+  /* line 57, ../sass/navigation.scss */
   .navigation .container .menu-wrapper > div {
     display: inline-block;
     position: relative;
@@ -62,7 +81,7 @@
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
   }
-  /* line 55, ../sass/navigation.scss */
+  /* line 66, ../sass/navigation.scss */
   .navigation .container ul {
     margin: 0;
     margin-left: -50%;
@@ -73,80 +92,86 @@
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
   }
-  /* line 61, ../sass/navigation.scss */
+  /* line 72, ../sass/navigation.scss */
   .navigation .container ul li {
     display: inline;
   }
-  /* line 63, ../sass/navigation.scss */
+  /* line 74, ../sass/navigation.scss */
   .navigation .container ul li a {
     display: inline-block;
     padding: 20px 16px;
     color: #555555;
     text-decoration: none;
-  }
-  /* line 68, ../sass/navigation.scss */
-  .navigation .container ul li a:hover {
-    background-color: #4ebf3f;
-    color: white;
-  }
-  /* line 75, ../sass/navigation.scss */
-  .navigation .container ul .current-menu-item a, .navigation .container ul .current-page-ancestor a {
-    background-color: #4ebf3f;
-    color: white;
+    letter-spacing: 1px;
+    font-weight: 400;
   }
   /* line 82, ../sass/navigation.scss */
+  .navigation .container ul li a:hover {
+    background-color: #178ac1;
+    color: white;
+  }
+  /* line 89, ../sass/navigation.scss */
+  .navigation .container ul .current-menu-item a, .navigation .container ul .current-page-ancestor a {
+    background-color: #178ac1;
+    color: white;
+  }
+  /* line 96, ../sass/navigation.scss */
   .navigation .container .menuicon {
     display: none;
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 13, ../sass/navigation.scss */
+  /* line 17, ../sass/navigation.scss */
   .navigation .container {
     position: absolute;
     top: 15px;
     width: 100%;
-    padding-left: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
-  /* line 93, ../sass/navigation.scss */
+  /* line 108, ../sass/navigation.scss */
   .navigation .container .menuicon {
-    position: relative;
-    top: 5px;
-    margin-right: 15px;
+    position: absolute;
+    top: 7px;
+    left: 18px;
   }
-  /* line 98, ../sass/navigation.scss */
+  /* line 113, ../sass/navigation.scss */
   .navigation .container h2 {
     display: inline-block;
-    margin-top: 4px;
+    margin-top: 0px;
+    margin-bottom: 18px;
   }
-  /* line 102, ../sass/navigation.scss */
+  /* line 118, ../sass/navigation.scss */
   .navigation .container .menuicon-caption {
     display: inline-block;
   }
-  /* line 105, ../sass/navigation.scss */
+  /* line 121, ../sass/navigation.scss */
   .navigation .container .menu-wrapper {
-    padding-left: 15px;
+    padding-left: 0px;
     position: absolute;
     top: 46px;
-    background-color: white;
+    background-color: #efefef;
     left: -100%;
     width: 100%;
     z-index: 21;
   }
-  /* line 114, ../sass/navigation.scss */
+  /* line 130, ../sass/navigation.scss */
   .navigation .container .menu-wrapper ul {
     margin-left: 0;
     padding-left: 5px;
+    padding-top: 30px;
     padding-bottom: 20px;
   }
-  /* line 118, ../sass/navigation.scss */
+  /* line 135, ../sass/navigation.scss */
   .navigation .container .menu-wrapper ul li {
+    text-align: center;
     display: block;
     padding-top: 10px;
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 
-/* line 131, ../sass/navigation.scss */
+/* line 149, ../sass/navigation.scss */
 .fixed {
   position: fixed;
   top: 0px;
@@ -154,23 +179,23 @@
   text-align: left;
   background-color: white;
 }
-/* line 138, ../sass/navigation.scss */
+/* line 156, ../sass/navigation.scss */
 .fixed .container .logo {
   visibility: visible;
   opacity: 1;
 }
 @media screen and (min-width: 768px) {
-  /* line 144, ../sass/navigation.scss */
+  /* line 162, ../sass/navigation.scss */
   .fixed .container .menu-wrapper > div {
     display: inline-block;
     position: relative;
     left: 170px;
   }
-  /* line 149, ../sass/navigation.scss */
+  /* line 167, ../sass/navigation.scss */
   .fixed .container .menu-wrapper ul {
     margin-left: 0;
   }
-  /* line 153, ../sass/navigation.scss */
+  /* line 171, ../sass/navigation.scss */
   .fixed .container h2 {
     display: inline-block;
     margin: 0;
@@ -179,24 +204,24 @@
     margin-right: 15px;
   }
 }
-/* line 161, ../sass/navigation.scss */
+/* line 179, ../sass/navigation.scss */
 .fixed .container .menuicon-caption {
   display: none;
 }
 
-/* line 169, ../sass/navigation.scss */
+/* line 187, ../sass/navigation.scss */
 .single-post .current-menu-item a {
   background-color: transparent !important;
   color: #555555 !important;
 }
-/* line 172, ../sass/navigation.scss */
+/* line 190, ../sass/navigation.scss */
 .single-post .current-menu-item a:hover {
-  background-color: #4ebf3f;
+  background-color: #178ac1;
   color: white;
 }
 
-/* line 178, ../sass/navigation.scss */
+/* line 196, ../sass/navigation.scss */
 .single-post .current-menu-item ~ li a {
-  background-color: #4ebf3f;
+  background-color: #178ac1;
   color: white !important;
 }
