@@ -1,7 +1,7 @@
-<meta name="og:site_name" content="The Monkies">
-<meta name="og:title" content="The Monkies">
+<meta name="og:site_name" content="Cosmic Circle">
+<meta name="og:title" content="Cosmic Circle">
 <meta name="author" content="How About Yes">
-<meta name="keywords" content="Meditation,Yoga,Creativity,Community,Connection,Social,Buddhism,Schiedam,Rotterdam">
+<meta name="keywords" content="Kirtan,Sound,Healing,Klankschalen,Therapy,Meditation,Yoga,Creativity,Connection,Social,Schiedam,Rotterdam">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="<?php echo get_template_directory_uri(); ?>/js/jquery-1.11.2.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
