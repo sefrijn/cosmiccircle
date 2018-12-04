@@ -26,7 +26,7 @@
 	<meta name="description" content="<?php echo $myExcerpt; ?>">
 	<meta name="og:description" content="<?php echo $myExcerpt; ?>">
 	<meta property="og:image" content="<?php echo $myImage; ?>" />	
-	<title><?php echo $myTitle; ?> | The Monkies</title>
+	<title><?php echo $myTitle; ?> | Cosmic Circle</title>
 	<?php include('includes/header-include.php'); ?>
 </head>
 

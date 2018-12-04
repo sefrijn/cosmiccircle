@@ -16,10 +16,21 @@
 <!-- VISION -->
 	<div id="vision" class="container">
 		<h1><?php _e('our vision', 'themonkies') ?></h1>
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				<?php 
+					$page_ID = get_ID_by_slug('vision');
+					$content_post = get_post($page_ID);
+					$content = $content_post->post_content;
+					$content = apply_filters('the_content', $content);
+					$content = str_replace(']]>', ']]&gt;', $content);
+					echo $content;
+				 ?>
+			</div>
+		</div>
 		<div class="vision-elements-wrapper row">
 			<?php
 				// Get the Vision child pages
-				$page_ID = get_ID_by_slug('vision');
 				$args=array(
 				  'post_type' => 'page',
 				  'post_status' => 'publish',
