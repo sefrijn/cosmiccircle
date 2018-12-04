@@ -67,9 +67,10 @@
 	<?php 
 		if( $my_query->have_posts() ) {
 			while ( $my_query->have_posts() ) : $my_query->the_post(); ?>
+				<hr>
 				<div class="vision-detail container">
 					<a class="anchor" id="<?php echo $post->post_name; ?>"></a>
-						<h1><?php the_title(); ?></h1>
+						<h2><?php the_title(); ?></h2>
 						<div class="row image">
 							<div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2" style="
 								<?php if ( has_post_thumbnail(get_the_ID()) ) { ?>

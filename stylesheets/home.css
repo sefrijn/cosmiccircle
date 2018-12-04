@@ -82,14 +82,14 @@
 }
 /* line 76, ../sass/home.scss */
 #home #vision .vision-elements-wrapper .vision-element h2, #home #vision .activities-elements-wrapper .vision-element h2, #home #activities .vision-elements-wrapper .vision-element h2, #home #activities .activities-elements-wrapper .vision-element h2 {
-  font-size: 40px;
+  font-size: 32px;
   padding: 0 8%;
 }
 /* line 80, ../sass/home.scss */
 #home #vision .vision-elements-wrapper .activities-element h2, #home #vision .activities-elements-wrapper .activities-element h2, #home #activities .vision-elements-wrapper .activities-element h2, #home #activities .activities-elements-wrapper .activities-element h2 {
-  font-size: 40px;
+  font-size: 32px;
   padding: 0 8%;
-  margin-bottom: -15px;
+  margin-bottom: -10px;
   margin-top: 10px;
 }
 /* line 87, ../sass/home.scss */
@@ -275,35 +275,43 @@
     margin-right: -30px;
   }
 }
-/* line 247, ../sass/home.scss */
+@media screen and (min-width: 992px) {
+  /* line 248, ../sass/home.scss */
+  #home #monkies .row {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 870px;
+  }
+}
+/* line 255, ../sass/home.scss */
 #home #monkies .monkie {
   display: block;
   text-decoration: none;
 }
-/* line 250, ../sass/home.scss */
+/* line 258, ../sass/home.scss */
 #home #monkies .monkie:hover {
   color: #178ac1;
 }
-/* line 252, ../sass/home.scss */
+/* line 260, ../sass/home.scss */
 #home #monkies .monkie:hover img.attachment-news-thumb {
   box-shadow: 0 4px 0 #178ac1;
 }
-/* line 258, ../sass/home.scss */
+/* line 266, ../sass/home.scss */
 #home #monkies h1, #home #monkies h2 {
   text-align: center;
 }
-/* line 261, ../sass/home.scss */
+/* line 269, ../sass/home.scss */
 #home #monkies h2 {
   font-size: 21px;
   font-family: 'Open Sans';
   font-weight: 400;
 }
-/* line 266, ../sass/home.scss */
+/* line 274, ../sass/home.scss */
 #home #monkies img {
   width: 100%;
   height: auto;
 }
-/* line 273, ../sass/home.scss */
+/* line 281, ../sass/home.scss */
 #home #location {
   color: white;
   padding: 100px 15%;
@@ -317,7 +325,7 @@
   -o-background-size: cover;
   background-size: cover;
 }
-/* line 285, ../sass/home.scss */
+/* line 293, ../sass/home.scss */
 #home #location a {
   color: white;
   display: inline-block;
@@ -325,13 +333,13 @@
   padding: 10px 15px;
   text-decoration: none;
 }
-/* line 292, ../sass/home.scss */
+/* line 300, ../sass/home.scss */
 #home #location a:hover {
   background-color: #178ac1;
   color: white;
   border-color: #178ac1;
 }
-/* line 299, ../sass/home.scss */
+/* line 307, ../sass/home.scss */
 #home p {
   font-size: 18px;
   line-height: 1.5em;
