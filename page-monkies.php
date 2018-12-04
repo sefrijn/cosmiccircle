@@ -7,12 +7,14 @@
 ?>
 <div id="monkies" class="wrapper">
 	<div class="container">
-	<h2 class="page-title">sefrijn & eline</h2>
-	<div class="col-md-6 col-md-offset-3">
-		<?php 
-			the_content();
-		 ?>
-	</div>	
+		<h2 class="page-title">sefrijn & eline</h2>
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				<?php 
+					the_content();
+				 ?>
+			</div>	
+		</div>
 		<div class="row">
 			<?php 
 				$counter = 0;
