@@ -40,7 +40,7 @@
   -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
   color: #fff;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 /* line 36, ../sass/activities.scss */
 .page-template-page-activities #activities .activities-elements-wrapper .activities-element .item-image-content .vertical-center h2 {

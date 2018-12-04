@@ -55,7 +55,7 @@
   -webkit-transition-duration: 0.2s;
   transition-duration: 0.2s;
   color: #fff;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 /* line 42, ../sass/vision.scss */
 .page-template-page-vision #vision .vision-elements-wrapper .vision-element .item-image-content .vertical-center h2 {
